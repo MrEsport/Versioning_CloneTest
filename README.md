@@ -1,3 +1,38 @@
+-- Command lines to Clone and Change remote --
+
+\git clone https://github.com/RedStudio418/Marguerite.git TestClone
+
+\cd TestClone
+
+\git remote add CloneFork https://github.com/MrEsport/Versioning_CloneTest
+	fatal: not a git repository (or any of the parent directories): .git
+
+\git remote add CloneFork https://github.com/MrEsport/Versioning_CloneTest.git
+
+\git remote -v
+	CloneFork       https://github.com/MrEsport/Versioning_CloneTest.git (fetch)
+	CloneFork       https://github.com/MrEsport/Versioning_CloneTest.git (push)
+	origin  https://github.com/RedStudio418/Marguerite.git (fetch)
+	origin  https://github.com/RedStudio418/Marguerite.git (push)
+
+\git help remote
+
+\git remote rm origin
+
+\git remote -v
+	CloneFork       https://github.com/MrEsport/Versioning_CloneTest.git (fetch)
+	CloneFork       https://github.com/MrEsport/Versioning_CloneTest.git (push)
+
+\git push CloneFork master
+
+\git add README.md
+
+\git commit -m "added Command Lines path"
+
+\ git push
+
+--------------------------------------------------------------
+{
 # Marguerite
 
 ## FR
@@ -31,5 +66,5 @@ License GNU 2.0
 🔥 Facebook : https://www.facebook.com/AventuresDeRed
 
 🔥 Instagram : https://www.instagram.com/aventuresdered
-
+}
 
